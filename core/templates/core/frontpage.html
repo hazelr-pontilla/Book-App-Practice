@@ -1,0 +1,18 @@
+<!-- serves as a landing page -->
+
+{% extends 'core/base.html' %}
+
+{% block title %} Frontpage {% endblock %}
+
+{% block content %}
+
+    <h1 class="text-2xl">List of all books</h1>
+    <hr>
+
+    {% for book in books %}
+
+        <h2> {{ book.title }} </h2>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+create virtual environment                  // python -m venv (venv name of the folder)
+activate virtual environment                // venv/scripts/activate
+django install and setup                    // pip install django
+create a bookstore project                  // django-admin startproject bookstore .
+initialize database, superuser, test run    //call the sub command migrate //python m(tab) migrate //python m(tab) createsuperuser
+create core app for base pages
+create user table
+create app for user profiles                //medyo complicated na didi 
+
+create app for books                        //done
+add category model                          //done
+
+list out newest books on the frontpage
+book detail view
+category view
+show vendor on the book detail pages
+add images to the books
+simple search
+vendor detail page
+sign in, log in and log out page
+create my account page
+add books to category
+view cart
+checkout
+implement payment gateway
+admin pages for the vendors
+deploy the project
