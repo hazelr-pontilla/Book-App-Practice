@@ -1,3 +1,5 @@
+{% load menu %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +14,9 @@
         <div class="logo">
             <a href="{% url 'frontpage' %}">Bookstore&trade;</a>
         </div>
-        <div class="menu">
-            <a href="{% url 'about' %}">About</a>
+        <div class="menu flex space-x-4 text-sm">
+            {% menu %}
+            
         </div>
     </nav>
 
@@ -22,6 +25,6 @@
         {% endblock %}
     </main>
 
-    <footer></footer>
+    <footer></footer> 
 </body>
 </html>
