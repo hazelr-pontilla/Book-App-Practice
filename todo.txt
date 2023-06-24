@@ -10,9 +10,9 @@ create app for user profiles                //medyo complicated na didi
 create app for books                        //done
 add category model                          //done
 
-list out newest books on the frontpage
-book detail view
-category view
+list out newest books on the frontpage      //done
+book detail view                            //done
+category view                           
 show vendor on the book detail pages
 add images to the books
 simple search

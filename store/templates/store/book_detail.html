@@ -1,0 +1,21 @@
+<!-- serves as a the book details to be show here -->
+
+{% extends 'core/base.html' %}
+
+{% block title %} {{ book.title}} {% endblock %}
+
+{% block content %}
+
+    <h1 class="text-2xl"> {{ book.title}} </h1>
+
+    <p class="text-xs text-gray-600">
+        ${{ book.get_display_price }}
+        -
+        {% firstof book.user.get_full_name book.user.username %}
+    </p>
+
+    {% if book.description %}
+        <p class="text-justify mt-4">{{ book.description }}</p>
+    {% endif %}
+
+{% endblock %}
